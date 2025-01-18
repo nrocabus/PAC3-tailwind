@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+
 /**
  * Use this file to import partials.
  * Do not include SCSS code in this file.
@@ -15,8 +18,12 @@
  * see commented examples below
  */
 
-// @import "some-node-module";
-// @import "@some-company/some-node-module";
+/**
+* @import "some-node-module";
+* @import "@some-company/some-node-module";
+*/
+
+@import '/node_modules/@fortawesome/fontawesome-free/css/all.css';
 
 /**
  * Import layouts
@@ -24,7 +31,10 @@
  */
 
 @import "layouts/home";
+@import "layouts/atomic";
 
 /**
  * Do NOT include anything else in this file!
  */
+
+ @tailwind utilities;

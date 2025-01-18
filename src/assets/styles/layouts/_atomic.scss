@@ -1,0 +1,48 @@
+@layer components{
+    .h1-fontsize-responsive{
+        font-size: clamp(1.5rem, 3vw, 2.5rem);
+    }
+
+    .h2-fontsize-responsive{
+        font-size: clamp(1.3rem, 3vw, 2.1rem)
+    }
+
+    .h3-fontsize-responsive{
+        font-size: clamp(1.2rem, 3vw, 1.7rem);
+    }
+
+    .card-width-responsive{
+        width: clamp(120px, 90vh, 200px);
+    }
+
+    .index-grid-row-template{
+        grid-template-rows: auto 3rem minmax(80px, 150px) minmax(80px, 150px) minmax(0, 3rem) auto;
+    }
+
+    .index-grid-column-template{
+        grid-template-columns: 1fr fit-content(300px) fit-content(300px) 1fr;
+    }
+
+    .text-vertical{
+        writing-mode:vertical-rl;
+    }
+
+    .text-oritentation{
+        text-orientation:mixed;
+    }
+}
+
+@layer components{
+    .card{
+        @apply card-width-responsive flex flex-col relative aspect-square rounded-2xl overflow-hidden;
+    }
+
+    .button{
+        @apply relative z-10 font-base text-center bg-yellow-300 rounded-3xl mx-auto p-2;
+    }
+
+    .card:not(:has(img)){
+        @apply bg-default-profile bg-cover;
+    }
+
+}

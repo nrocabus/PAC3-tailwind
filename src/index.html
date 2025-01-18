@@ -1,27 +1,61 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="ca">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
     <title>UOC Boilerplate</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Lato:ital,wght@0,400;1,100;1,400&family=Open+Sans:wght@300&family=Roboto:wght@100;300&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Lato:ital,wght@0,400;1,100;1,400&family=Open+Sans:wght@300&family=Roboto:wght@100;300&family=Sixtyfour+Convergence&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
   </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
+  <body class="m-0 p-0 flex flex-col h-screen">
+    
+    <include src="./views/header.html"></include>
+    
+        <div class="grid index-grid-column-template index-grid-row-template w-full h-full items-stretch sm:grid-cols-[1fr_fit-content(300px)_fit-content(300px)_minmax(0,100px)_1fr]">
+
+<div class="row-start-1 row-end-7 col-start-1 col-end-6 overflow-hidden">
+        
+        <video class="w-full h-full object-cover" autoplay loop muted>
+          <source src="/src/assets/images/httpspixabay.comvideosparticles-data-connection-185631.mp4" type="video/mp4">
+          
+        </video>
+      </div>
+
+      <div class="row-start-1 row-end-3 col-start-2 col-end-4 mix-blend-multiply bg-red-filter"></div>
+      <div class="row-start-5 row-end-7 col-start-2 col-end-4 mix-blend-multiply bg-red-filter"></div>
+      <div class="row-start-1 row-end-7 col-start-1 col-end-1 mix-blend-multiply bg-red-filter"></div>
+      <div class="row-start-1 row-end-7 col-start-4 col-end-6 mix-blend-multiply bg-red-filter"></div>
+      <div class="flex items-center justify-end row-start-3 row-end-3 col-start-2 col-end-2 mix-blend-multiply bg-red-filter text-green-console text-[min(14cqw,6rem)] font-black">
+        Ciber
+      </div>
+      <div class="flex items-center justify-start row-start-3 row-end-3 col-start-3 col-end-3 mix-blend-multiply bg-red-filter text-blue-2025 text-[min(14cqw,6rem)] font-black">
+        2025
+      </div>
+      <div class="flex items-start justify-center row-start-4 row-end-4 col-start-2 col-end-4 pt-4 leading-8 mix-blend-multiply bg-red-filter text-green-console text-[min(14cqw,6rem)] font-black">
+        Seguretat
+      </div>
+
+      <div class="flex flex-col items-center row-start-5 row-end-7 col-start-2 col-end-4 gap-4 z-10 text-green-console sm:col-end-5">
+        <p class="font-code text-center">&lsaquo; Del 25 al 31 de Gener de 2025 participa a les jornades de ciberseguretat &rsaquo;</p>
+        <a href="#" class="p-2 rounded-full bg-green-console text-black">Ciberseguretat 2025</a>
+        <a href="#" class="p-2 rounded-full bg-green-console text-black">Inscriu-te a les jornades</a>
+      </div>
+
+      <div class="row-start-3 row-end-5 col-start-4 col-end-4 z-10 text-green-console text-center text-vertical text-orientation items-center py-12 hidden sm:flex justify-center">Viu-les presencialment a Girona o en directe online</div>
+    </div>      
+    
     <include src="./views/footer.html"></include>
+
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
 </html>
